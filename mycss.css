@@ -89,7 +89,8 @@ body{
     border-radius: 0 0 500% 500%;
     border: none;
     position: fixed;
-    left: 1vh;
+    left: .2vh;
+    top: 0px;
     box-shadow: 5px 6px 5px #121f2455;
     
 }
@@ -104,7 +105,7 @@ body{
     border-radius: 0 0 500% 500%;
     border: none;
     position: fixed;
-    left: 1vh;
+    left: .2vh;
     box-shadow: 5px 6px 5px #121f2455;
     animation-name: infoup;
     animation-fill-mode: forwards;
@@ -142,17 +143,17 @@ body{
 
 
 .info2{
-        height: 6vh;
+        height: 11vh;
         width: 8vh;
         margin: 0 0 0px;
         background-color: #3c777f;
         padding-bottom: 30px;
         font-size: 1em;
         box-shadow: none;
-        border-radius: 500% 500% 0 0;
+        border-radius: 40% 40% 0 0;
         border: none;
         position: fixed;
-        left: 1vh;
+        left: .2vh;
         bottom: 0vh;
         box-shadow: 5px 6px 5px #121f2455;
         animation-name: infodown;
@@ -185,7 +186,7 @@ body{
         }
     
         100%{
-        top: 94vh;
+        top: 90vh;
         }
     }
     
@@ -326,12 +327,13 @@ font-size: 4.2em;
 
 /*------------------------- creditos ------------------*/
 .divCreditos{
-margin: 1.5vh auto;
+margin: 0 auto;
+margin-bottom: 10vh;
 background-color: #3c777f55;
 border: solid #fdfaf566;
 border-radius: 10px;
 width: 95%;
-height: 93vh;
+height: 90vh;
 box-shadow: 5px 6px 5px #121f2499;
 padding: 20px;
 display: flex;

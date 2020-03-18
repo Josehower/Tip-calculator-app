@@ -137,4 +137,15 @@ box-shadow: 5px 6px 5px #121f24;
 
 }
 
+/*------------------------- respuesta ------------------*/
+
+.response {
+
+font-size: 4.2em;
+}
+
+#Vdinero {
+    font-family: 'Righteous', cursive;
+    padding: 1vh;
+}
 

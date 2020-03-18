@@ -5,7 +5,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" href="mycss.css"></link> 
+        <link rel="stylesheet" href="mycss.css"></link> 
     <title>Document</title>
 </head>
 <body>
@@ -14,33 +14,36 @@
         <h1>Tip Calculator</h1>
     </header>
     
-    <section>
+    <section id="recuadro">
         <span>How much was the bill?</span>
         
             <img class="icon" src="images/cash.png" width="25px" alt="Icon made by Pixel perfect 
             from www.flaticon.com" />
-            <input type="number" class="blankSpace" placeholder="Amount!" >
+            <input type="number" class="blankSpace" id="bill" placeholder="Amount!" value="" >
         
         <span>How was the service?</span>
         <img class="icon" src="images/drop-down-round-button.png" width="25px" alt="Icon made by Pixel perfect 
         from www.flaticon.com" />
-        <select class="blankSpace" >
-            <option value="select one">Feeling!</option>
-            <option value="terrible">- Terrible</option>
-            <option value="poor">- Poor</option>
-            <option value="just ok">- Just ok</option>
-            <option value="nice">- Nice</option>
-            <option value="excellent">- Excellent</option>
-            <option value="out of this world">- Out of this world</option>
+        <select class="blankSpace" id="service">
+            <option value="20">Feeling!</option>
+            <option value="8">8% &nbsp;&nbsp;- Terrible</option>
+            <option value="10">10% - Poor</option>
+            <option value="15">15% - Just ok</option>
+            <option value="18">18% - Nice</option>
+            <option value="20">20% - Excellent</option>
+            <option value="22">22% - Out of this world</option>
         </select><Br>
         <span>How many people share the bill?</span>
         <img class="icon" src="images/multiple-users-silhouette.png" width="25px" alt="Icon made by Pixel perfect 
         from www.flaticon.com" />
-        <input type="number" class="blankSpace" placeholder="People!" ><br>
-        <button type="button">Calculate</button>
+        <input type="number" class="blankSpace" id="people" placeholder="People!" value="" ><br>
+        <button type="button" onclick="calculate()">Calculate</button>
     </section>
 
 
     </select>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

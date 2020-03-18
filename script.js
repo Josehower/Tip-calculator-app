@@ -22,7 +22,7 @@ recuadro.innerHTML=
 respuesta +"</span id='Vdinero'></span><button type='button' onclick='retry()'>retry</button>"
 }
 else{recuadro.innerHTML=
-    "<span class='response'> You dont have to give any tip. <br><br> But just consider give at least : <br><span id='Vdinero'>$ "+ 
+    "<span class='responseL'> You dont have to give any tip. <br><br> But just consider give at least : <br><span id='Vdinero'>$ "+ 
     1 +"</span id='Vdinero'></span><button type='button' onclick='retry()'>retry</button>"
 
 }

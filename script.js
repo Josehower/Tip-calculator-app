@@ -16,16 +16,15 @@ if (isNaN(respuesta)|| respuesta == Infinity) {
     recuadro.innerHTML=
 "<span class='response'>Sorry i need all the values. <br><br> Please retry whit real values </span><button type='button' onclick='retry()'>retry</button>"
 }
-else{
-// console.log(bill.value)
-// console.log(service.value)
-// console.log(people.value)
-
-// console.log(bill.value*(service.value/100)/people.value)
-
+else if (respuesta != 0){
 recuadro.innerHTML=
 "<span class='response'> Each person should leave a tip of: <br><span id='Vdinero'>$ "+ 
 respuesta +"</span id='Vdinero'></span><button type='button' onclick='retry()'>retry</button>"
+}
+else{recuadro.innerHTML=
+    "<span class='response'> You dont have to give any tip. <br><br> But just consider give at least : <br><span id='Vdinero'>$ "+ 
+    1 +"</span id='Vdinero'></span><button type='button' onclick='retry()'>retry</button>"
+
 }
 };
 

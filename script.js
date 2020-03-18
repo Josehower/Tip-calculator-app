@@ -4,12 +4,6 @@ let people = document.getElementById("people")
 let recuadro = document.getElementById("recuadro")
 let recuadroOriginal = recuadro.innerHTML;
 
-
-bill = document.getElementById("bill")
-service = document.getElementById("service")
-people = document.getElementById("people")
-
-
 function calculate(){
 respuesta = Math.round(bill.value*(service.value/100)/people.value)
 if (isNaN(respuesta)|| respuesta == Infinity) {
@@ -28,16 +22,30 @@ else{recuadro.innerHTML=
 }
 };
 
-//calculate()
-
 function retry() {
 const recuadro = document.getElementById("recuadro")
 recuadro.innerHTML= recuadroOriginal
 bill = document.getElementById("bill")
 service = document.getElementById("service")
 people = document.getElementById("people")
-console.log(bill.value)
-console.log(service.value)
-console.log(people.value)
 
 };
+
+function animar (){
+let animationObject = document.querySelector("body")
+animationObject.className= "animation"
+let botonRev = document.querySelector(".bInfo, .info")
+botonRev.onclick = function onclick(event) {devolver()}
+botonRev.className= "info2"
+}
+
+function devolver (){
+    let animationObject = document.querySelector("body")
+    animationObject.className= "animation2"
+    let botonRev = document.querySelector(".info2")
+    botonRev.onclick = function onclick(event) {animar()};
+    botonRev.className= "info"
+    }
+
+
+

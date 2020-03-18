@@ -32,16 +32,184 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-  
+    position: relative;
+    top: -96vh;
+
+}
+.animation{
+    position: relative;
+    top: -96vh;
+    animation-name: credits;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+
+}
+.animation2{
+    position: relative;
+    top: -96vh;
+    animation-name: credits2;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-direction: reverse;
+
 }
 
+@keyframes credits{
+    
+    0%{
+    top: -96vh;
+    }
+
+    100%{
+        top: 5vw;
+    }
+}
+
+@keyframes credits2{
+    
+    0%{
+    top: -96vh;
+    }
+
+    100%{
+        top: 5vw;
+    }
+}
+
+
+
 /*------------------------- cabecera ------------------------*/
+.bInfo{
+    height: 6vh;
+    width: 8vh;
+    margin: 0 0 5px;
+    background-color: #3c777f;
+    font-size: 1em;
+    box-shadow: none;
+    border-radius: 0 0 500% 500%;
+    border: none;
+    position: fixed;
+    left: 5vh;
+    box-shadow: 5px 6px 5px #121f2455;
+    
+}
+
+.info{
+    height: 6vh;
+    width: 8vh;
+    margin: 0 0 5px;
+    background-color: #3c777f;
+    font-size: 1em;
+    box-shadow: none;
+    border-radius: 0 0 500% 500%;
+    border: none;
+    position: fixed;
+    left: 5vh;
+    box-shadow: 5px 6px 5px #121f2455;
+    animation-name: infoup;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    
+}
+
+@keyframes infoup {
+    0%{
+        top: 94vh;
+        }
+
+        20%{
+            border-radius: 20%;
+            background-color: #fdfaf522 ;
+        }   
+        30%{
+            border-radius: 30%;
+            background-color: #fdfaf522 ;
+        }
+        50%{
+            border-radius: 50%;
+            background-color: #fdfaf522 
+        }
+        80%{
+            border-radius: 50%;
+            background-color: #fdfaf522 
+        }
+    
+        100%{
+        top: 0vw;
+        }
+}
+
+
+.info2{
+        height: 6vh;
+        width: 8vh;
+        margin: 0 0 0px;
+        background-color: #3c777f;
+        padding-bottom: 30px;
+        font-size: 1em;
+        box-shadow: none;
+        border-radius: 500% 500% 0 0;
+        border: none;
+        position: fixed;
+        left: 5vh;
+        bottom: 0vh;
+        box-shadow: 5px 6px 5px #121f2455;
+        animation-name: infodown;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        
+    }
+
+@keyframes infodown{
+    
+        0%{
+        top: 0vh;
+        }
+        20%{
+            border-radius: 20%;
+            background-color: #fdfaf522 ;
+        }   
+        30%{
+            border-radius: 30%;
+            background-color: #fdfaf522 ;
+        }
+        50%{
+            border-radius: 50%;
+            background-color: #fdfaf522 
+        }
+        80%{
+            border-radius: 50%;
+            background-color: #fdfaf522 
+        }
+    
+        100%{
+        top: 94vh;
+        }
+    }
+    
+
+
+
+
+button span{
+    padding: 0;
+    border: solid;
+    border-radius: 50%;
+    margin: 0;
+    font-size: 2em;
+
+}
+    
+
+
 header{
-    margin: 20px 0;
     text-align: center;
-    box-shadow: 5px 6px 5px #121f24;;
+    box-shadow: 5px 6px 5px #121f24;
 }
 h1 {
+    margin: 0 0 0 0;
     background-color: #a4977b;
     font-family: 'Righteous', cursive;
     color: #fdfaf5;
@@ -146,7 +314,7 @@ font-size: 4.2em;
 
 .responseL {
 
-    font-size: 3em;
+    font-size: 3 em;
 
 }
 
@@ -154,5 +322,45 @@ font-size: 4.2em;
 #Vdinero {
     font-family: 'Righteous', cursive;
     padding: 1vh;
+}
+
+/*------------------------- creditos ------------------*/
+.divCreditos{
+margin: 1.5vh auto;
+background-color: #3c777f55;
+border: solid #fdfaf566;
+border-radius: 10px;
+width: 95%;
+height: 93vh;
+box-shadow: 5px 6px 5px #121f2499;
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
+.divCreditos h2{
+    font-size: 4em;
+    font-family:'Righteous', cursive;
+    text-shadow: 2px 2px 5px #121f24dd;
+    
+}
+.credits{
+font-size: 5em;
+}
+
+
+.divCreditos h3{
+    font-size: 2em;
+    font-family:'Righteous', cursive;
+    text-shadow: 2px 2px 5px #121f24dd;
+}
+.Acredits {
+    font-size: 1.5em;
+}
+.Acredits span{
+
+    font-size: .8em;
 }
 

@@ -80,32 +80,32 @@ body{
 
 /*------------------------- cabecera ------------------------*/
 .bInfo{
-    height: 6vh;
-    width: 8vh;
+    height: 5vh;
+    width: 5vh;
     margin: 0 0 5px;
     background-color: #3c777f;
-    font-size: 1em;
+    font-size: .6em;
     box-shadow: none;
     border-radius: 0 0 500% 500%;
     border: none;
     position: fixed;
-    left: .2vh;
+    right: .2vh;
     top: 0px;
     box-shadow: 5px 6px 5px #121f2455;
     
 }
 
 .info{
-    height: 6vh;
-    width: 8vh;
+    height: 5vh;
+    width: 5vh;
     margin: 0 0 5px;
     background-color: #3c777f;
-    font-size: 1em;
+    font-size: .6em;
     box-shadow: none;
     border-radius: 0 0 500% 500%;
     border: none;
     position: fixed;
-    left: .2vh;
+    right: .2vh;
     box-shadow: 5px 6px 5px #121f2455;
     animation-name: infoup;
     animation-fill-mode: forwards;
@@ -143,17 +143,17 @@ body{
 
 
 .info2{
-        height: 11vh;
-        width: 8vh;
+        height: 6vh;
+        width: 6vh;
         margin: 0 0 0px;
         background-color: #3c777f;
-        padding-bottom: 30px;
-        font-size: 1em;
+        padding: 10px;
+        font-size: .8em;
         box-shadow: none;
-        border-radius: 40% 40% 0 0;
+        border-radius: 50%;
         border: none;
         position: fixed;
-        left: .2vh;
+        right: .2vh;
         bottom: 0vh;
         box-shadow: 5px 6px 5px #121f2455;
         animation-name: infodown;
@@ -186,7 +186,8 @@ body{
         }
     
         100%{
-        top: 90vh;
+        top: 80vh;
+        right: 5vh;
         }
     }
     

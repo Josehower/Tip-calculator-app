@@ -36,6 +36,7 @@ let animationObject = document.querySelector("body")
 animationObject.className= "animation"
 let botonRev = document.querySelector(".bInfo, .info")
 botonRev.onclick = function onclick(event) {devolver()}
+botonRev.innerHTML = "<span>X</span>"
 botonRev.className= "info2"
 }
 
@@ -44,6 +45,7 @@ function devolver (){
     animationObject.className= "animation2"
     let botonRev = document.querySelector(".info2")
     botonRev.onclick = function onclick(event) {animar()};
+    botonRev.innerHTML = "<span>i</span>"
     botonRev.className= "info"
     }
 
